@@ -1,0 +1,70 @@
+/* Cấu hình chung */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://banghieuviet.org/wp-content/uploads/2024/01/background-dep-4k.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Khung chứa nội dung */
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Làm mờ nền để dễ đọc chữ */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Hiệu ứng tiêu đề */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    color: #00eaff;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #ff66b2;
+}
+
+/* Hiệu ứng hover */
+h1, h2, h3 {
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover, h3:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.9);
+}
+
+/* Hiệu ứng animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
